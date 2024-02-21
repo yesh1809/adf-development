@@ -1,0 +1,22 @@
+{
+	"name": "ds_mapping",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sa",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "HTTP"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "mapping.json",
+				"container": "mapping"
+			}
+		},
+		"schema": {}
+	}
+}

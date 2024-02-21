@@ -5,6 +5,11 @@
 			"referenceName": "ls_http_git",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"relativepath": {
+				"type": "string"
+			}
+		},
 		"folder": {
 			"name": "HTTP"
 		},
@@ -13,7 +18,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "HttpServerLocation",
-				"relativeUrl": "yesh1809/fileshttp/dev/employees.csv"
+				"relativeUrl": {
+					"value": "@dataset().relativepath",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

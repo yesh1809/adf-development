@@ -1,0 +1,19 @@
+{
+	"name": "ls_dbr",
+	"properties": {
+		"annotations": [],
+		"type": "AzureDatabricks",
+		"typeProperties": {
+			"domain": "https://adb-2191815666929427.7.azuredatabricks.net",
+			"accessToken": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_kv",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "DBR-Token"
+			},
+			"existingClusterId": "0225-215057-r6fhvza2"
+		}
+	}
+}
